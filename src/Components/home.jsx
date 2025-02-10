@@ -41,7 +41,7 @@ function Home() {
   })
   return (
     <div className="  overflow-hidden">
-      <div className=" flex justify-center md:justify-start  bgimage p-5  text-white md:text-black">
+      <div className=" flex justify-center md:justify-start  bgimage p-5  text-white md:text-amber-950">
         <div className="flex flex-col justify-center  ">
           <h2 className="sm:w-[500px] md:w-[600px] text-2xl sm:text-5xl md:text-6xl">
             Raining Offers For this Cold winter!

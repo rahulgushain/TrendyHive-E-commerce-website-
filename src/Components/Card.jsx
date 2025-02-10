@@ -34,7 +34,7 @@ export default function Card({data}){
             {
                 data.image.map((_,index)=>(
                     <button className={`w-[20px] h-[20px] rounded-full
-                    ${index === currindex ? 'bg-red-400' : 'bg-slate-400'} focus:border-none` }
+                    ${index === currindex ? 'bg-white' : 'bg-slate-400'} focus:border-none` }
                     key={index}
                     onClick={()=>clickHandler(index)}></button>
                 ))

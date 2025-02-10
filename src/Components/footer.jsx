@@ -10,7 +10,7 @@ import data from "../data";
 
 export default function Footer() {
   return (
-    <div className="min-h-[400px] w-full p-5 bg-gray-200">
+    <div className="min-h-[400px] w-full p-5 bg-gray-200  text-gray-800">
       <div className="flex flex-wrap gap-5 w-full">
         <div className=" flex flex-col items-center md:items-start z-20 md:w-[25vw] min-h-[200px]">
           <div className="j w-[100px] h-[100px] bg-white rounded-full ">

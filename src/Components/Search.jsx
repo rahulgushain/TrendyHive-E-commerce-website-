@@ -38,7 +38,7 @@ export default function Search() {
     };
 
     return (
-        <div className="flex relative items-center">
+        <div className="flex relative border-2 border-gray-600 rounded-lg items-center">
             <input
                 className="p-2 rounded-md bg-none w-[120px] sm:w-[150px] lg:w-[450px] focus-visible:outline-none"
                 placeholder="search here"

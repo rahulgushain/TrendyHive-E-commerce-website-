@@ -13,7 +13,7 @@ export default function FirstSlider({item}){
     
 
     return(
-        <div className="relative w-full h-[380px] p-6"> 
+        <div className="relative w-full h-[70vh] p-6"> 
         <div  className=" flex absolute w-full h-full top-0 left-0 transition-transform duration-700 ease-in-out "
       >
       
@@ -26,7 +26,7 @@ export default function FirstSlider({item}){
                     <button
                     key={index}
                     className={`flex w-[20px] h-[20px] rounded-full z-10 bg-gray-200 
-                     ${index === currIndex ? 'bg-red-400' : 'bg-slate-400'} focus:border-none `}
+                     ${index === currIndex ? 'bg-white' : 'bg-slate-400'} focus:border-none `}
                     onClick={()=>setCurrIndex(index)}
                     >
 

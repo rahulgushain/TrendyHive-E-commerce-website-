@@ -47,11 +47,11 @@ NavBar(prop) {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="fixed w-full z-50">
-      <div className="relative flex  items-center justify-between p-2 bg-gray-500 w-full ">
+    <div className="fixed w-full z-50 bg-white ">
+      <div className="relative flex  items-center justify-between  text-black w-full px-4 ">
         <Link to="/home">
-          <div className="w-[80px] h-[80px] rounded-full">
-            <img className="rounded-full w-full h-full" src={logo}></img>
+          <div className="w-[100px] h-[100px] rounded-full">
+            <img className="rounded-full w-full h-full bg-gray-500" src={logo}></img>
           </div>
         </Link>
         <nav className="flex  justify-between items-center h-[50px] ">
@@ -61,8 +61,8 @@ NavBar(prop) {
           </div>
         </nav>
         <div className="flex items-center gap-2">
-          <div className="lg:flex gap-5 items-center text-white hidden ">
-            <ul className="flex items-center gap-5">
+          <div className="lg:flex gap-5 items-center  hidden ">
+            <ul className="flex items-center text-xl text-gray-600 gap-5">
               <li>
                 <Link to="/support">About</Link>
               </li>
@@ -71,17 +71,18 @@ NavBar(prop) {
               </li>
             </ul>
             {!islogin && (
-              <button>
+              <button className="text-xl text-gray-600">
                 <Link to="/">Log in</Link>
               </button>
             )}
             {!islogin && (
-              <button>
-                <Link to="/signup"> sign up</Link>
+              <button className="text-xl text-gray-600">
+                <Link to="/signup">Sign up</Link>
               </button>
             )}
             {islogin && (
               <button
+              className="text-xl text-gray-600"
                 onClick={() => {
                   setlogin(!islogin);
                 }}
@@ -90,7 +91,8 @@ NavBar(prop) {
               </button>
             )}
             {islogin && (
-              <button>
+              <button
+              className="text-xl text-gray-600">
                 <Link to="/dashbord">Dashbord</Link>
               </button>
             )}
@@ -100,7 +102,7 @@ NavBar(prop) {
             {select && (
               <div
                 className="flex flex-col fixed right-0 top-[100px] 
-                 lg:hidden bg-slate-500  text-white text-2xl w-[300px] p-4"
+                 lg:hidden bg-slate-500   text-2xl w-[300px] p-4"
                 data-aos="fade-left"
               >
                 <ul className="flex flex-col items-center  ">
@@ -142,11 +144,11 @@ NavBar(prop) {
               </div>
             )}
           </div>
-          <div className="flex gap-5 items-center">
+          <div className="flex gap-5 text-gray-600 items-center">
           <Link to="/cart">
             <div className="relative ">
-              <MdOutlineShoppingBag className="text-white text-3xl " />
-              <div className="absolute flex justify-center items-center right-5 font-bold bg-red-600 text-white  rounded-full w-[20px]  h-[20px] top-0">
+              <MdOutlineShoppingBag className=" text-3xl " />
+              <div className="absolute flex justify-center items-center right-5 font-bold text-white bg-red-600  rounded-full w-[20px]  h-[20px] top-0">
                 {cart.cart.length}
               </div>
             </div>
@@ -155,16 +157,16 @@ NavBar(prop) {
             <button className="relative " 
              onClick={clickFavHandler}>
               <FaRegHeart
-                className="text-white text-[28px]"
+                className=" text-[28px]"
                
               />
-              <div className="absolute   right-5 font-bold bg-red-600 text-white  rounded-full w-[20px]  h-[20px] top-0">
+              <div className="absolute text-white  right-5 font-bold bg-red-600   rounded-full w-[20px]  h-[20px] top-0">
                 {cart.wishList.length}
               </div>
             </button>
           </div>
           <div
-            className="text-white block lg:hidden text-4xl"
+            className=" block lg:hidden text-4xl"
             onClick={clickHandler}
           >
             {select ? <ImCross /> : <IoMenu />}
@@ -172,8 +174,8 @@ NavBar(prop) {
           </div>
         </div>
       </div>
-      <div className="bg-blue-900 w-full h-[50px] text-center  bg-opacity-85">
-        <ul className="flex justify-center items-center h-full gap-3 md:gap-7 text-center text-white w-full">
+      <div className="bg-blue-300 w-full h-[50px] text-center  bg-opacity-85">
+        <ul className="flex justify-center text-gray-700 items-center h-full gap-3 md:gap-7 text-xl text-center w-full">
           <li>
             <Link to="/home">Home</Link>
           </li>
