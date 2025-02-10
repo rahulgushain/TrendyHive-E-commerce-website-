@@ -1,9 +1,5 @@
-import toast from "react-hot-toast";
 import { FaRegHeart } from "react-icons/fa";
 import { GoHeartFill } from "react-icons/go";
-
-import { useDispatch, useSelector } from "react-redux";
-import {add, remove,addWishList,removeWishList,} from "../Components/redux/slices/cartSlice";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DataContext } from "./Context";
@@ -12,29 +8,7 @@ import { DataContext } from "./Context";
 
 export default function Product({item}) {
   const {removeHandler,cart, wishList,addHandler,heartHandler,heartRemoveHandler} = useContext(DataContext)
-  // const { cart, wishList } = useSelector((state) => state.cart);
-  // setItem(item)
-  // console.log(item)
-
-  // const dispatch = useDispatch();
-
-  // const removeHandler = () => {
-  //   dispatch(remove(item.id));
-  //   toast.error("REMOVED");
-  // };
-  // const addHandler = () => {
-  //   dispatch(add(item));
-  //   toast.success("ADDED");
-  // };
-
-  // const heartHandler = () => {
-  //   dispatch(addWishList(item));
-  //   toast.success("Add in Favourte");
-  // };
-  // const heartRemoveHandler = () => {
-  //   dispatch(removeWishList(item.id));
-  //   toast.error("remove Favourte");
-  // };
+ 
 
   return (
     <div className="border-gray-500 border-2 rounded-xl p-2">
